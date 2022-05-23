@@ -1,4 +1,10 @@
-package Componentt;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package GUI.SaleGroup.LoginGui.Component;
+
+
 
 
 import java.awt.Color;
@@ -11,6 +17,16 @@ import javax.swing.JComponent;
 import javax.swing.border.EmptyBorder;
 import javax.swing.plaf.basic.BasicButtonUI;
 import javax.swing.plaf.basic.BasicTextFieldUI;
+
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints; 
+import javax.swing.AbstractButton;
+import javax.swing.JComponent;
+import javax.swing.border.EmptyBorder;
+import javax.swing.plaf.basic.BasicButtonUI;
+
 public class ButtonUI extends BasicButtonUI {
     public ButtonUI(){
         
@@ -37,8 +53,9 @@ public class ButtonUI extends BasicButtonUI {
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
        
         g.setColor(c.getBackground());
-        g.fillRoundRect(0, yOffset, size.width, size.height + yOffset - 5,30,30);
+        g.fillRoundRect(0, yOffset, size.width, size.height ,30,30);
     }
 }
     
+
 
